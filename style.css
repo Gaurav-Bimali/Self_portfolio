@@ -1,0 +1,1263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+html{
+    scroll-behavior: smooth ;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(100, 182, 249);
+    overflow-x: hidden;
+}
+
+/* CSS for navigation bar  */
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(8, 8, 83);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.logo{
+    color: rgb(217, 214, 214);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.navbar li{
+    list-style: none;
+    letter-spacing: 2px;
+}
+.navbar li a:hover{
+    color: rgb(199, 204, 48);
+}
+.navbar ul li .home{
+    color: rgb(199, 204, 48);
+}
+.navbar a{
+    text-decoration: none;
+    color: rgb(217, 214, 214);
+    font-size: 17px;
+    text-transform: uppercase; 
+    font-weight: bold;
+}
+.menubar div{
+    width: 25px;
+    height: 4px;
+    background-color: rgb(217, 214, 214);
+    margin: 4px;
+    display: none;
+    cursor: pointer;
+    transition: ease-in 0.2s;
+} 
+
+
+/* For the body section = first part */
+
+.first-body-section{
+    background-image: url(../images/photo-1620570623737-efc0ec4ab486.avif);
+    text-transform: uppercase;
+    color: rgb(229, 219, 219);
+    height: 380px;
+    background-size: cover;
+    padding-top: 40px;
+}
+.first-body-section h1{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding-top: 20px;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-size: 100px;
+    font-weight:bolder;
+    letter-spacing: 10px;
+    background: -webkit-linear-gradient(rgb(111, 147, 240), rgb(24, 5, 163));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.first-body-section p{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.first-body-section .button-container{
+    display: flex;
+    justify-content: center;
+}
+.button-container a{
+    color: rgb(218, 216, 216);
+    background-color: rgb(208, 13, 13);
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 50px;
+    margin-top: 20px;
+    padding: 10px 20px 10px 30px;
+}
+.button-container a:hover{
+    background-color: rgb(189, 7, 7);
+}
+.button-container a .arrow-icon{
+    margin-left: 10px;
+    color: white;
+    height: 13px;
+}
+button a{
+    text-decoration: none;
+    color: rgb(218, 216, 216);
+}
+
+/* For the body section = second part */
+
+.second-body-section{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.intro-part{
+    width: 450px;
+    text-transform: uppercase;
+}
+.intro-part h1{
+    color: rgb(11, 6, 96);
+    letter-spacing: 2px;  
+}
+.intro-part h2{
+    color: rgb(56, 11, 99);
+    margin: 10px 0px 20px 0px;
+}
+.intro-part p{
+    font-weight: bold;
+}
+.my-image img{
+    height: 300px;
+    border-radius: 50%;
+    z-index: -1;
+    filter:opacity(90%);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+}
+
+/* For the body section = third part */
+
+.third-body-section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    background-color: rgb(100, 182, 249);
+    text-transform: uppercase;
+}
+.skills{
+    width: 450px;
+}
+.skills h3{
+    color: rgb(10, 10, 111);
+    margin-bottom: 15px;
+}
+.skills .line1{
+    height: 8px;
+    width: 350px;
+    margin-bottom: 15px;
+    background:linear-gradient(to right , rgb(9, 9, 185) 90% , rgb(225, 225, 203) 0%);
+}
+.skills .line2{
+    height: 8px;
+    width: 350px;
+    margin-bottom: 15px;
+    background:linear-gradient(to right , rgb(9, 9, 185) 75% ,rgb(225, 225, 203) 0%);
+}
+.skills .line3{
+    height: 8px;
+    width: 350px;
+    margin-bottom: 15px;
+    background:linear-gradient(to right , rgb(9, 9, 185) 90% ,rgb(225, 225, 203) 0%);
+}
+.skills .line4{
+    height: 8px;
+    width: 350px;
+   background:linear-gradient(to right , rgb(9, 9, 185) 80% ,rgb(225, 225, 203) 0%);
+    margin-bottom: 15px;
+}
+.skills .line5{
+    height: 8px;
+    width: 350px;
+   background:linear-gradient(to right , rgb(9, 9, 185) 60% ,rgb(225, 225, 203) 0%);
+    margin-bottom: 15px;
+}
+.container1{
+    width: 300px;
+    display: flex;
+}
+.icon-container img{
+    width: 35px;
+    display: block;
+    margin-top: 35px;
+}
+.text-container a{
+    display: block;
+    text-decoration: none;
+    color: rgb(4, 4, 64);
+    margin-top: 45px;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.text-container a:hover{
+    color: rgb(6, 30, 182);
+}
+
+
+    /* For the Contact section */
+
+
+.contact-section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    padding-top: 30px;
+    background-color: rgb(49, 47, 47);
+    color: rgb(230, 230, 230);
+    margin-bottom: 20px;
+}
+
+    /* For the Contact section = form-container */  
+
+#name{
+    margin: 0px 0px 40px 30px;
+    width: 350px;
+    padding: 8px 10px;
+    border:none;
+    background-color: rgb(218, 216, 216);
+}
+#email{
+    margin: 0px 0px 40px 30.5px;
+    width: 350px;
+    padding: 8px 10px;
+    border:none;
+    background-color: rgb(218, 216, 216);
+}
+#number{
+    margin: 0px 0px 40px 33px;
+    width: 350px;
+    padding: 8px 10px;
+    border:none;
+    background-color: rgb(218, 216, 216);
+}
+#message{
+    margin: 0px 0px 20px 90px;
+    width: 350px;
+    height: 100px;
+    padding: 8px 10px ;
+    border:none;
+    background-color: rgb(218, 216, 216);
+}
+.send-button{
+    background-color: rgb(173, 6, 6);
+    border: none;
+    margin: 10px 0px 0px 90px;
+    color: white;
+    padding: 5px 5px;
+}
+.send-button:hover{
+    background-color: rgb(138, 3, 3);
+}
+.hire-button{
+    background-color: rgb(173, 6, 6);
+    margin: 0px 0px 0px 30px;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+}
+.hire-button:hover{
+    background-color: rgb(138, 3, 3);
+}
+
+
+    /* For the Contact section = my-details */
+
+.address{
+    background-color: rgb(79, 74, 74);
+    padding: 20px 30px;
+    margin: 0px 0px 20px 0px;
+}
+.address h3{
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.address h4{
+    font-weight: normal;
+}
+.contact-number{
+    background-color: rgb(79, 74, 74);
+    padding: 20px 30px;
+    margin: 0px 0px 20px 0px;
+}
+.contact-number a{
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+}
+.contact-number h3{
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.contact-number h4{
+    font-weight: normal;
+}
+.mail{
+    background-color: rgb(79, 74, 74);
+    padding: 20px 30px;
+    margin: 0px 0px 20px 0px;
+}
+.mail a{
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+}
+.mail h3{
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.mail h4{
+    font-weight: normal;
+}
+
+
+    /* CSS for footer section */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(65, 65, 70);
+    height: 40px;
+    margin-top: -20px;
+}
+.img-footer{
+    width: 500px;
+    margin-top: 6px;
+}
+.img-footer a{
+    text-decoration: none;
+}
+.img-footer img{
+    width: 20px;
+    filter: grayscale(10);
+    margin-left: 80px;
+}
+.text-footer span{
+    font-size: 13px;
+    color: rgb(218, 217, 216);
+    filter: opacity(90%);
+}
+.copyright{
+    margin-right: 100px;
+}
+
+
+
+
+
+/* For the responsize design */
+/* CSS of media queries */
+
+
+@media all and (max-width:1100px) {
+    .form-container{
+        width: 400px;
+    }
+    #name{
+        width: 250px;
+        padding: 4px 5px;
+        margin-bottom: 30px;
+    }
+    #email{
+        width: 250px;
+        padding: 4px 5px;
+        margin-bottom: 30px;
+    }
+    #number{
+        width: 250px;
+        padding: 4px 5px;
+        margin-bottom: 30px;
+    }
+    #message{
+        width: 250px;
+        padding: 4px 5px;
+        margin-bottom: 17px;
+    }
+    .my-details{
+        font-size: 15px;
+    }
+    .address{
+        padding: 10px 20px;
+    }
+    .contact-number{
+        padding: 10px 20px;
+    }
+    .mail{
+        padding: 10px 20px;
+    }
+    .img-footer{
+        width: 450px;
+    }
+    .img-footer img{
+        margin-left: 60px;
+    }
+    .copyright{
+        margin-right: 70px;
+    }
+    
+}
+
+    /* ---------------------------------- */
+
+@media all and (max-width: 900px){
+    .menubar div{
+        display: block;
+    }
+    .menubar.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .menubar.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menubar.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+     .navbar ul{
+        position: fixed;
+        left: -100%;
+        top: 40px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(8, 8, 83);
+        width: 100%;
+        height: 50vh;
+        text-align: center;
+        transition: 0.5s;
+     }
+     .navbar ul li{
+        margin: 20px 0;
+     }
+     .navbar ul li a{
+        font-size: 20px;
+        font-weight: bold;
+     }
+     .navbar ul.active{
+        left: 0;
+     }
+    .first-body-section{
+        height: 320px;
+    }
+    .first-body-section h1{
+        font-size: 27px;
+    }
+    .name{
+        font-size: 70px;
+    }
+    .first-body-section p{
+        font-size: 20px;
+    }
+    .button-container a{
+        font-size: 15px;
+    }
+    .second-body-section{
+        display: block;
+    }
+    .intro-part {
+        width: 100% ;
+    }
+    .intro-part h1 , h2 , p {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .intro-part p{
+        margin: 0px 100px;
+    }
+    .my-image {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .form-container{
+        width: 500px;
+        margin-left: 4px;
+    }
+    .my-details{
+        margin-right: 4px;
+    }
+    .img-footer{
+        width: 300px;
+    }
+    .img-footer img{
+        margin-left: 50px;
+    }
+    .copyright{
+        margin-right: 50px;
+    }
+}
+
+/* ---------------------------------- */
+
+@media all and (max-width:751px){
+    .third-body-section{
+        display: block;
+    }
+    .skills{
+        margin-left: 25vw;
+        margin-bottom: 5vh;
+        width: 350px;
+    }
+    .icon-container{
+        margin-left: 28vw;
+    }
+    .text-container a{
+        width: 220px;
+    }
+    .form-container{
+        width: 700px;
+    }
+    .img-footer{
+        width: 180px;
+        margin-left: 60px;
+    }
+    .img-footer img{
+        margin-left: 20px;
+    }
+    .text-footer span{
+        font-size: 12px;
+    }
+    .copyright{
+        margin-right: 30px;
+    }
+    
+}
+
+
+/* ---------------------------------- */
+
+@media all and (max-width: 636px){
+    .contact-section{
+        padding-bottom: 3px
+    }
+    .first-body-section {
+        height: 290px;
+    }
+    .first-body-section h1{
+        font-size: 23px;
+    }
+    .name{
+        font-size: 50px;
+        margin:  10px 0px;
+    }
+    .first-body-section p{
+        font-size: 17px;
+        font-weight: lighter;
+    }
+    .button-container a{
+        font-size: 14px;
+        padding: 7px 13px 7px 18px;
+    }
+    .button-container a .arrow-icon{
+        height: 11px;
+    }
+    .intro-part p{
+        margin: 0px 50px;
+    }
+    .skills{
+        margin-left: 20vw;
+    }
+    .icon-container{
+        margin-left: 23vw;
+    }
+    .contact-section{
+        display: block;
+    }
+    .form-container{
+        margin-left: 21vw;
+        margin-bottom: 30px;
+        width: 345px;
+    }
+    .my-details{
+        margin: 0vw 10vw;
+    }
+    .img-footer{
+        margin-left: 0px;
+        width: 115px;
+    }
+    .img-footer img{
+        width: 15px;
+        margin-left: 10px;
+    }
+    .text-footer span{
+        font-size: 10px;
+        margin-right: 10px;
+    }
+    
+}
+
+
+/* ---------------------------------- */
+
+@media all and (max-width:500px){
+    .intro-part P{
+        font-size: 13px;
+        margin: 0px 40px;
+    }
+    .form-container{
+        margin: 0px 12vw;
+        margin-bottom: 50px;
+    }
+    .my-details{
+        margin: 0vw 16vw;
+    }
+/* ---------------------------------- */
+
+@media all and (max-width: 492px){
+    .first-body-section {
+        height: 240px;
+    }
+    .first-body-section h1{
+        font-size: 17px;
+    }
+    .name{
+        font-size: 32px;
+        letter-spacing: 6px;
+    }
+    .first-body-section p{
+        font-size: 13px;
+    }
+    .button-container a{
+        font-size: 12px;
+        padding: 5px 10px 5px 15px;
+    }
+    .button-container a .arrow-icon{
+        height: 9px;
+        margin-left: 5px;
+    }
+    .skills .line1{
+        width: 280px;
+    }
+    .skills .line2{
+        width: 280px;
+    }
+    .skills .line3{
+        width: 280px;
+    }
+    .skills .line4{
+        width: 280px;
+    }
+    .skills .line5{
+        width: 280px;
+    }
+    .skills{
+        margin-left: 20vw;
+        width: 280px;
+    }
+    .skills span{
+        font-size: 15px;
+    }
+    .icon-container{
+        margin-left: 22vw;
+        margin-top: 6px;
+    }
+    .icon-container img{
+        width: 29px;
+    }
+    .text-container a{
+        font-size: 13px;
+        width: 175px;
+    }
+    .form-container{
+        font-size: 15px;
+        margin: 0px 15vw;
+        margin-bottom: 50px;
+        width: 291px;
+    }
+    .form-container ::placeholder{
+        font-size: 11px;
+    }
+    #name{
+        width: 200px;
+        padding: 2px 3px;
+        margin-bottom: 20px;
+    }
+    #email{
+        width: 200px;
+        padding: 2px 3px;
+        margin-bottom: 20px;
+    }
+    #number{
+        width: 200px;
+        padding: 2px 3px;
+        margin-bottom: 20px;
+    }
+    #message{
+        width: 200px;
+        padding: 2px 3px;
+        margin-left: 86px;
+        margin-bottom: 17px;
+    }
+    .send-button{
+        font-size: 11px;
+    }
+    .hire-button{
+        font-size: 11px;
+    }
+    .address h3{
+        font-size: 13px;
+    }
+    .address h4{
+        font-size: 12px;
+    }
+    .contact-number h3{
+        font-size: 13px;
+    }
+    .contact-number h4{
+        font-size: 12px;
+    }
+    .mail h3{
+        font-size: 13px;
+    }
+    .mail h4{
+        font-size: 12px;
+    }
+}
+
+/* ---------------------------------- */
+
+@media all and (max-width:380px){
+    .logo{
+        font-size: 20px;
+    }
+    .my-image img{
+        height: 260px;
+    }
+    .skills .line1{
+        width: 250px;
+    }
+    .skills .line2{
+        width: 250px;
+    }
+    .skills .line3{
+        width: 250px;
+    }
+    .skills .line4{
+        width: 250px;
+    }
+    .skills .line5{
+        width: 250px;
+    }
+    .skills{
+        margin-left: 20vw;
+        width: 250px;
+    }
+    .skills span{
+        font-size: 13px;
+    }
+    .icon-container{
+        margin-left: 22vw;
+        margin-top: 6px;
+    }
+    .icon-container img{
+        width: 26px;
+    }
+    .text-container a{
+        font-size: 11px;
+        width: 150px;
+    }
+    .form-container{
+        font-size: 13px;
+        margin: 0px 10vw;
+        margin-bottom: 50px;
+        width: 291px;
+    }
+    .form-container ::placeholder{
+        font-size: 11px;
+    }
+    #message{
+        margin-left: 79px;
+    }
+    .img-footer{
+        width: 150px;
+    }
+    .img-footer img{
+        width: 15px;
+        margin-left: 10px;
+    }
+    .text-footer span{
+        font-size: 11px;
+    }
+    .f-gmail{
+        display: none;
+    }
+}
+
+/* ---------------------------------- */
+
+@media all and (max-width:360px){
+    .my-image img{
+        height: 210px;
+    }
+    .skills .line1{
+        width: 220px;
+    }
+    .skills .line2{
+        width: 220px;
+    }
+    .skills .line3{
+        width: 220px;
+    }
+    .skills .line4{
+        width: 220px;
+    }
+    .skills .line5{
+        width: 220px;
+    }
+    .skills{
+        margin-left: 18vw;
+        width: 220px;
+    }
+    .skills span{
+        font-size: 13px;
+    }
+    .icon-container{
+        margin-left: 18vw;
+        margin-top: 6px;
+    }
+    .icon-container img{
+        width: 26px;
+    }
+    .text-container a{
+        font-size: 11px;
+        width: 150px;
+    }
+    .form-container{
+        width: 261px;
+    }
+    .form-container ::placeholder{
+        font-size: 10px;
+    }
+    #name{
+        width: 180px;
+        padding: 0px 3px;
+        margin-bottom: 20px;
+    }
+    #email{
+        width: 180px;
+        padding: 0px 3px;
+        margin-bottom: 20px;
+    }
+    #number{
+        width: 180px;
+        padding: 0px 3px;
+        margin-bottom: 20px;
+    }
+    #message{
+        width: 180px;
+        height: 70px;
+        padding: 0px 3px;
+        margin-left: 80px;
+        margin-bottom: 10px;
+    }
+    .send-button{
+        margin-left: 80px;
+        font-size: 9px;
+    }
+    .hire-button{
+        font-size: 9px;
+    }
+    .address h3{
+        font-size: 11px;
+    }
+    .address h4{
+        font-size: 10px;
+    }
+    .contact-number h3{
+        font-size: 11px;
+    }
+    .contact-number h4{
+        font-size: 10px;
+    }
+    .mail h3{
+        font-size: 11px;
+    }
+    .mail h4{
+        font-size: 10px;
+    }
+    
+}
+/* ---------------------------------- */
+
+@media all and (max-width: 308px){
+    .first-body-section {
+        height: 215px;
+    }
+    .first-body-section h1{
+        font-size: 14px;
+    }
+    .name{
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+    .first-body-section p{
+        font-size: 11px;
+    }
+    .button-container a{
+        font-size: 10px;
+        padding: 4px 8px 4px 11px;
+    }
+    .button-container a .arrow-icon{
+        height: 7px;
+        margin-left: 3px;
+    }
+    .intro-part p{
+        margin: 0px 20px;
+    }
+    .skills .line1{
+        width: 180px;
+    }
+    .skills .line2{
+        width: 180px;
+    }
+    .skills .line3{
+        width: 180px;
+    }
+    .skills .line4{
+        width: 180px;
+    }
+    .skills .line5{
+        width: 180px;
+    }
+    .skills{
+        width: 180px;
+    }
+    .skills span{
+        font-size: 12px;
+    }
+    .container1{
+        width: 253px;
+    }
+    .icon-container{
+        margin-left: 20vw;
+        margin-top: 6px;
+    }
+    .icon-container img{
+        width: 25px;
+    }
+    .text-container a{
+        font-size: 11px;
+        width: 147px;
+        margin-left: 20px;
+    }
+    .form-container{
+        margin-left: 2vw;
+        width: 257px;
+        width: 228px;
+    }
+    .form-container .name1{
+        font-size: 12px;
+    }
+    .form-container .e-mail{
+        font-size: 12px;
+    }
+    .form-container .number{
+        font-size: 12px;
+    }
+    #name{
+        width: 150px;
+    }
+    #email{
+        width: 150px;
+    }
+    #number{
+        width: 150px;
+    }
+    #message{
+        margin-left: 76px;
+        width: 150px;
+    }
+    .send-button{
+        font-size: 8px;
+        padding: 3px 4px;
+    }
+    .hire-button{
+        font-size: 8px;
+        padding: 3px 4px;
+    }
+    .my-details{
+        width: 230px;
+        margin-left: 8vw;
+        margin-right: 5vw;
+    }
+    .address{
+        padding: 5px;
+    }
+    .contact-number{
+        padding: 5px;
+    }
+    .mail{
+        padding: 5px;
+    }
+    .img-footer{
+        width: 100px;
+    }
+    .img-footer img{
+        width: 13px;
+        margin-left: 8px;
+    }
+    .text-footer span{
+        font-size: 8px;
+        margin: 0px;
+    }
+    .f-gmail{
+        display: none;
+    }
+
+}
+
+/* ---------------------------------- */
+
+@media all and (max-width:256px) {
+    .logo{
+        font-size: 15px;
+    }
+    .intro-part p{
+        font-size: 12px;
+        margin: 0px 10px;
+    }
+    .intro-part h1{
+        font-size: 25px;
+    }
+    .intro-part h2{
+        font-size: 20px;
+    }
+    .my-image img{
+        height: 180px;
+    }
+    .skills{
+        margin-left: 15vw;
+    }
+    .skills .line1 {
+        height: 6px;
+    }
+    .skills .line2 {
+        height: 6px;
+    }
+    .skills .line3 {
+        height: 6px;
+    }
+    .skills .line4 {
+        height: 6px;
+    }
+    .skills .line5 {
+        height: 6px;
+    }
+    .container1{
+        width: 222px;
+    }
+    .icon-container{
+        margin-left: 15vw;
+        margin-top: 9px;
+    }
+    .icon-container img{
+        width: 24px;
+    }
+    .text-container a{
+        font-size: 10.5px;
+    } 
+    .form-container{
+        width: 180px;
+    }
+    .form-container ::placeholder{
+        font-size: 8px;
+    }
+    .form-container .name1{
+        font-size: 10px;
+    }
+    .form-container .e-mail{
+        font-size: 10px;
+    }
+    .form-container .number{
+        font-size: 10px;
+    }
+    #name{
+        width: 110px;
+    }
+    #email{
+        width: 110px;
+    }
+    #number{
+        width: 110px;
+    }
+    #message{
+        width: 110px;
+        height: 60px;
+        padding-top: 3px;
+        margin-left: 69px;
+    }
+    .send-button{
+        padding: 1px 2px;
+        margin-left: 69px;
+    }
+    .hire-button{
+        padding: 1px 2px;
+        margin-left: 10px;
+    }
+    .my-details{
+        margin-left: 12vw;
+        width: 180px;
+    }
+    .address h3{
+        font-size: 9px;
+        font-weight: normal;
+    }
+    .address h4{
+        font-size: 8px;
+    }
+    .contact-number h3{
+        font-size: 9px;
+        font-weight: normal;
+    }
+    .contact-number h4{
+        font-size: 8px;
+    }
+    .mail h3{
+        font-size: 9px;
+        font-weight: normal;
+    }
+    .mail h4{
+        font-size: 8px;
+    }
+    
+
+}
+
+/* ---------------------------------- */
+
+@media all and (max-width:224px) {
+.name{
+    font-size: 20px;
+}
+.first-body-section{
+    height: 202px;
+}
+.first-body-section p{
+    font-size: 9px;
+}
+.my-image img{
+    height: 150px;
+}
+.skills{
+    width: 150px;
+}
+.skills .line1{
+    height: 4px;
+    width: 150px;
+}
+.skills .line2{
+    height: 4px;
+    width: 150px;
+}
+.skills .line3{
+    height: 4px;
+    width: 150px;
+}
+.skills .line4{
+    height: 4px;
+    width: 150px;
+}
+.skills .line5{
+    height: 4px;
+    width: 150px;
+}
+.second-body-section h1{
+    font-size: 24px;
+    color: rgb(11, 6, 96);
+}
+.second-body-section h2{
+    color: rgb(56, 11, 99);
+}
+.container1{
+    width: 194px;
+}
+.icon-container img{
+    width: 20px;
+}
+.text-container a{
+    font-size: 9px;
+    width: 121px;
+}
+.contact{
+    padding-top: 6px;
+}   
+}
+
+/* ---------------------------------- */
+
+@media all and (max-width:204px){
+    .my-details{
+        margin-left: 7vw
+    }
+}
+
+/* ---------------------------------- */
+
+@media all and (max-width: 194px) {
+    *{
+        overflow-x: hidden;
+    }
+    .first-body-section{
+        height: 175px;
+    }
+    .first-body-section h1{
+        font-size: 7px;
+    }
+    .name{
+        font-size: 18px;
+        letter-spacing: normal;
+    }
+    .first-body-section p{
+        font-size: 7px;
+    }
+    .button-container a{
+        font-size: 7px;
+        padding: 2px 2px 2px 5px;
+    }
+    .button-container img{
+        width: 0px;
+    }
+    .second-body-section h1{
+        font-size: 11px;
+        letter-spacing: normal;
+    }
+    .second-body-section h2{
+        font-size: 10px;
+    }
+    .second-body-section p{
+        font-size: 7px;
+    }
+    .my-image img{
+        height: 100px;
+    }
+    }
+}
+    /* CSS code for the index page finished*/

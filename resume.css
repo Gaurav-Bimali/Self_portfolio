@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+/* CSS for navigation bar  */
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(8, 8, 83);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.logo{
+    color: rgb(217, 214, 214);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.navbar li{
+    list-style: none;
+    letter-spacing: 2px;
+}
+.navbar li a:hover{
+    color: rgb(199, 204, 48);
+}
+.navbar ul li .resume{
+    color: rgb(199, 204, 48);
+}
+.navbar a{
+    text-decoration: none;
+    color: rgb(217, 214, 214);
+    font-size: 17px;
+    text-transform: uppercase; 
+    font-weight: bold;
+}
+.menubar div{
+    width: 25px;
+    height: 4px;
+    background-color: rgb(217, 214, 214);
+    margin: 4px;
+    display: none;
+    cursor: pointer;
+    transition: ease-in 0.2s;
+} 
+
+    /* CSS for Body Section = full-container */
+
+.full-container{
+    height: 100%;
+    background-color: red;
+    margin: 0px 200px;
+}
+
+    /* CSS for Body Section = top-part */
+
+.top-part{
+    background-color: rgb(44, 44, 48);
+    height: 30vh;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+}
+.top-part h1{
+    color: rgb(167, 186, 231);
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+.top-part h2{
+    color: rgb(190, 187, 187);
+}
+.top-part img{
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+        /* CSS for Body Section = Content part */
+
+.content{
+    display: flex;
+}
+
+
+        /* CSS for Content Part of Body Section = Left-section */
+
+.left-section{
+    background-color: rgb(199, 206, 247);
+    width: 70%;
+}
+.left-section h4{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.about{
+    margin: 20px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.about h2{
+    text-decoration: underline;
+    color: rgb(15, 5, 92);
+}
+.about p{
+    margin-top: 10px;
+}
+hr{
+    border: none;
+    height: 3px;
+    margin: 0px 50px;
+    background-color: rgb(1, 1, 15);
+}
+
+.education{
+    margin: 20px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.education h2{
+    text-decoration: underline;
+    color: rgb(15, 5, 92);
+}
+.education h3{
+    padding-bottom: 5px;
+}
+.school{
+    margin: 10px 0px 20px 0px;
+}
+.college{
+    margin: 10px 0px 20px 0px;
+}
+
+.experience{
+    margin: 20px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.experience h2{
+    text-decoration: underline;
+    color: rgb(15, 5, 92);
+    margin-bottom: 10px;
+}
+
+.objective{
+    margin: 20px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.objective h2{
+    text-decoration: underline;
+    color: rgb(15, 5, 92);
+    margin-bottom: 10px;
+}
+
+
+        /* CSS for Content Part of Body Section = Right Section */
+    
+.right-section{
+    background-color: rgb(244, 239, 135);
+    width: 30%;
+}
+.right-section h2{
+    margin: 20px 10px;
+    text-transform: uppercase;
+    color: rgb(8, 8, 83);
+    text-decoration: underline;
+    font-weight: bold;
+}
+.right-section h3{
+    font-size: 12px;
+}
+.right-section img{
+    width: 22px;
+    margin: 0px 15px 20px 10px;
+}
+.right-section a{
+    text-decoration: none;
+    color: black;
+}
+.location{
+    display: flex;
+}
+.gmail{
+    display: flex;
+}
+.gmail img{
+    margin-bottom: 40px;
+}
+.number{
+    display: flex;
+}
+.number img{
+    margin-bottom: 40px;
+}
+.github{
+    display: flex;
+}
+.facebook{
+    display: flex;
+}
+.instagram{
+    display: flex;
+}
+.linkedin{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+    /* For the responsize design */
+    /* CSS of media queries */
+
+
+
+
+    /* ---------------------------------- */
+
+@media all and (max-width:1200px) {
+    .full-container{
+        margin: 0px 50px;
+    }
+}
+
+    /* ---------------------------------- */
+
+@media all and (max-width: 900px){
+    .menubar div{
+        display: block;
+    }
+    .menubar.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .menubar.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menubar.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navbar ul{
+        position: fixed;
+        left: -100%;
+        top: 40px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(8, 8, 83);
+        width: 100%;
+        height: 50vh;
+        text-align: center;
+        transition: 0.5s;
+    }
+    .navbar ul li{
+        margin: 20px 0;
+    }
+     .navbar ul li a{
+        font-size: 20px;
+        font-weight: bold;
+    }
+     .navbar ul.active{
+        left: 0;
+    }
+    .full-container{
+        margin: 0px 0px;
+    }
+    .top-part .container1 h1{
+        font-size: 50px;
+    } 
+    .top-part .container1 h2{
+        font-size: 25px;
+    }
+    .left-section{
+        width: 68%;
+    }
+    .left-section p{
+        font-size: 14px;
+    }
+    .left-section h3{
+        font-size: 17px;
+    }
+    .left-section h4{
+        font-size: 14px;
+    }
+    .right-section{
+        width: 42%;
+    }
+}
+
+    /* ---------------------------------- */
+
+@media all and (max-width: 784px) {
+    .full-container{
+        margin: 0px 0px;
+    }
+    .full-container .top-part h1{
+        font-size: 40px;
+    }   
+    .full-container .top-part h2{
+        font-size: 20px;
+    }
+    .my-img img{
+        height: 140px;
+    }
+    .left-section{
+        width: 65%;
+    }
+    .left-section h2{
+        font-size: 20px;
+    }
+    .left-section h4{
+        font-size: 13px;
+    }
+    .left-section P{
+        font-size: 12px;
+    }
+    .right-section{
+        width: 35%;
+    }
+    .right-section img{
+        width: 17px;
+    }
+    .right-section h3{
+        font-size: 11px;
+    }
+    .right-section h2{
+        font-size: 20px;
+    }
+    
+}
+
+     /* ---------------------------------- */
+
+@media all and (max-width: 626px) {
+    .top-part .container1 h1{
+        font-size: 33px;
+        letter-spacing: 3px;
+    }
+    .top-part .container1 h2{
+        font-size: 16px;
+    }
+    .my-img img{
+        height: 100px;
+    }
+    .left-section{
+        width: 61%;
+    }
+    .left-section h2{
+        font-size: 16px;
+    }
+    .left-section h3{
+        font-size: 13px;
+    }
+    .left-section h4{
+        font-size: 10px;
+    }
+    .left-section p{
+        font-size: 10px;
+    }
+    .right-section{
+        width: 39%;
+    }
+    .right-section h2{
+        font-size: 16px;
+    }
+    .right-section img{
+        width: 13px;
+    }
+    .right-section h3{
+        font-size: 9px;
+    }
+}
+
+  /* ---------------------------------- */
+
+@media  all and (max-width: 465px) {
+    .top-part .container1  h1{
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+    .top-part .container1 h2{
+        font-size: 14px;
+    }
+    .my-img img{
+        height: 90px;
+    }
+    .gmail{
+        display: none;
+    }
+    .about{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .education{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .experience{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .objective{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .left-section h2{
+        font-size: 15px;
+    }
+    .left-section h3{
+        font-size: 12px;
+    }
+    .left-section h4{
+        font-size: 9px;
+    }
+    .left-section p{
+        font-size: 9px;
+    }
+    .right-section img{
+        margin: 0px 10px 20px 5px;
+    }
+    .number img{
+        margin-bottom: 35px;
+    }
+}  
+
+  /* ---------------------------------- */
+
+  @media  all and (max-width: 350px) {
+    .top-part .container1 h1{
+        font-size: 20px;
+        letter-spacing: normal;
+    }
+    .top-part .container1 h2{
+        font-size: 11px;
+    }
+    .my-img img{
+        height: 80px;
+    }
+    .left-section h2{
+        font-size: 13px;
+    }
+    .left-section h3{
+        font-size: 12px;
+    }
+    .left-section h4{
+        font-size: 9px;
+    }
+    .left-section p{
+        font-size: 8px;
+    }
+    .right-section h2{
+        font-size: 14px;
+    }
+    .right-section img{
+        width: 12px;
+    }
+    .right-section h3{
+        font-size: 8px;
+    }
+}
+
