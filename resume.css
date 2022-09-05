@@ -353,7 +353,7 @@ hr{
 
      /* ---------------------------------- */
 
-/*@media all and (max-width: 626px) {
+@media all and (max-width: 626px) {
     .top-part .container1 h1{
         font-size: 33px;
         letter-spacing: 3px;
@@ -391,11 +391,11 @@ hr{
     .right-section h3{
         font-size: 9px;
     }
-} */
+} 
 
   /* ---------------------------------- */
 
-@media  all and (max-width: 626px) {
+@media  all and (max-width: 465px) {
     .top-part .container1  h1{
         font-size: 25px;
         letter-spacing: 2px;
